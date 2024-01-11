@@ -1,0 +1,15 @@
+
+2024-01-10 22:50:58,294 - INFO: Invalid Email Register Test execution start...
+2024-01-10 22:50:59,634 - INFO: Edge launch successfully
+2024-01-10 22:51:03,762 - INFO: Register page open Successful.
+2024-01-10 22:51:04,579 - INFO: Enter First Name Successfully.
+2024-01-10 22:51:04,954 - INFO: Enter Last Name Successfully
+2024-01-10 22:51:05,036 - INFO: Enter E-mail Successfully
+2024-01-10 22:51:05,036 - INFO: E-Mail Address does not appear to be valid!
+2024-01-10 22:51:05,119 - INFO: Enter phone number Successfully
+2024-01-10 22:51:05,207 - INFO: Enter password Successfully
+2024-01-10 22:51:05,283 - INFO: Enter confirm password Successfully
+2024-01-10 22:51:05,336 - INFO: Subscribe Radio Button clicked Successfully
+2024-01-10 22:51:08,389 - INFO: agree checkbox checked Successfully
+2024-01-10 22:51:11,457 - INFO: continue button clicked successfully
+2024-01-10 22:51:16,476 - INFO: Test passed. Can't Register

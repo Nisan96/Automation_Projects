@@ -1,0 +1,16 @@
+2024-01-09 15:21:34,613 - INFO: valid Register Test execution start...
+2024-01-09 15:21:36,546 - INFO: Edge launch successfully
+2024-01-09 15:21:41,918 - INFO: Register page open Successful.
+2024-01-09 15:21:43,368 - INFO: Enter First Name Successfully.
+2024-01-09 15:21:43,368 - INFO: name shouldn't start with number
+2024-01-09 15:21:43,692 - INFO: Enter Last Name Successfully
+2024-01-09 15:21:43,692 - INFO: Last Name must be between 1 and 32 characters!
+2024-01-09 15:21:43,692 - INFO: name shouldn't start with number
+2024-01-09 15:21:43,970 - INFO: Enter E-mail Successfully
+2024-01-09 15:21:44,278 - INFO: Enter phone number Successfully
+2024-01-09 15:21:44,360 - INFO: Enter password Successfully
+2024-01-09 15:21:44,440 - INFO: Enter confirm password Successfully
+2024-01-09 15:21:44,492 - INFO: Subscribe Radio Button clicked Successfully
+2024-01-09 15:21:47,542 - INFO: agree checkbox checked Successfully
+2024-01-09 15:21:51,090 - INFO: continue button clicked successfully
+2024-01-09 15:21:56,105 - INFO: Test passed. can't Register

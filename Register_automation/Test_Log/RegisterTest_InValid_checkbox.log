@@ -1,0 +1,13 @@
+2024-01-11 10:36:56,321 - INFO: Invalid checkbox Register Test execution start...
+2024-01-11 10:36:58,254 - INFO: Edge launch successfully
+2024-01-11 10:37:08,242 - INFO: Register page open Successful.
+2024-01-11 10:37:09,325 - INFO: Enter First Name Successfully.
+2024-01-11 10:37:09,704 - INFO: Enter Last Name Successfully
+2024-01-11 10:37:10,155 - INFO: Enter E-mail Successfully
+2024-01-11 10:37:10,697 - INFO: Enter phone number Successfully
+2024-01-11 10:37:10,774 - INFO: Enter password Successfully
+2024-01-11 10:37:10,854 - INFO: Enter confirm password Successfully
+2024-01-11 10:37:10,922 - INFO: Subscribe Radio Button clicked Successfully
+2024-01-11 10:37:13,944 - ERROR: agree checkbox Unchecked!
+2024-01-11 10:37:17,278 - INFO: continue button clicked successfully
+2024-01-11 10:37:22,317 - INFO: Test passed. Can't Register

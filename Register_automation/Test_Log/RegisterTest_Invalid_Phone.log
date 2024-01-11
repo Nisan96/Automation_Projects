@@ -1,0 +1,14 @@
+2024-01-10 23:16:38,441 - INFO: Invalid Phone Register Test execution start...
+2024-01-10 23:16:39,792 - INFO: Edge launch successfully
+2024-01-10 23:16:55,992 - INFO: Register page open Successful.
+2024-01-10 23:17:01,525 - INFO: Enter First Name Successfully.
+2024-01-10 23:17:01,820 - INFO: Enter Last Name Successfully
+2024-01-10 23:17:02,256 - INFO: Enter E-mail Successfully
+2024-01-10 23:17:02,369 - INFO: Enter phone number Successfully
+2024-01-10 23:17:02,369 - INFO: It's Invalid phone number
+2024-01-10 23:17:02,455 - INFO: Enter password Successfully
+2024-01-10 23:17:02,547 - INFO: Enter confirm password Successfully
+2024-01-10 23:17:02,596 - INFO: Subscribe Radio Button clicked Successfully
+2024-01-10 23:17:05,659 - INFO: agree checkbox checked Successfully
+2024-01-10 23:17:09,500 - INFO: continue button clicked successfully
+2024-01-10 23:17:14,516 - INFO: Test failed. Account Created!
