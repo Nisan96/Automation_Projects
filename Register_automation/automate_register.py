@@ -165,12 +165,13 @@ def valid_RegisterTest():
     if continue_button_enable_state == True:
         continue_button.click()
         logging.info("continue button clicked successfully")
-        time.sleep(5)
+        #time.sleep(5)
     else:
         logging.error("continue button isn't enable...Test Fail")
 
     # step 21: verify continue button work or not by checking url
     expected_url = "https://tutorialsninja.com/demo/index.php?route=account/success"
+    time.sleep(5)
     actual_url = control.current_url
     if expected_url == actual_url:
         logging.info("Test passed. Register successfully")
@@ -178,6 +179,8 @@ def valid_RegisterTest():
     else:
         logging.info("Test failed. Can't Register")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_ValidTest_failed.png")
+
+    control.close()
 
 # Invalid Name Test automation
 def Invalid_Name_RegisterTest():
@@ -358,6 +361,8 @@ def Invalid_Name_RegisterTest():
         logging.info("Test failed. Account Created")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Invalid_Name_Test_failed.png")
 
+    control.close()
+
 # Invalid phone number test automation
 def Invalid_Phone_RegisterTest():
     # Configure Logging settings
@@ -526,6 +531,8 @@ def Invalid_Phone_RegisterTest():
     else:
         logging.info("Test failed. Account Created!")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Inalid_phone_Test_failed.png")
+
+    control.close()
 
 # Invalid password test automation
 def Invalid_Password_RegisterTest():
@@ -701,6 +708,8 @@ def Invalid_Password_RegisterTest():
     else:
         logging.info("Test failed. Account Created!")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Invalid_password_Test_failed.png")
+
+    control.close()
 
 # Invalid email test automation
 def Invalid_Email_RegisterTest():
@@ -915,6 +924,8 @@ def Invalid_Email_RegisterTest():
         logging.info("Test failed. Account Created!")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Invalid_Email_Test_failed.png")
 
+    control.close()
+
 # Invalid test (uncheck agree box)
 def Invalid_checkbox_RegisterTest():
     # Configure Logging settings
@@ -1082,6 +1093,8 @@ def Invalid_checkbox_RegisterTest():
     else:
         logging.info("Test failed. Account Created!")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Invalid_checkbox_Test_failed.png")
+
+    control.close()
 
 
 # Main Function
