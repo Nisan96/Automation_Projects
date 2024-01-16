@@ -1,3 +1,4 @@
+import os
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -15,9 +16,28 @@ screenshot_file_path = "D:\\Automation_testing\\Automation_Projects\\Register_au
 
 # Valid Test automation
 def valid_RegisterTest():
-    # Configure Logging settings
+    '''# Configure Logging settings
     logging.basicConfig(filename="Test_Log/RegisterTest_Valid.log", level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s: %(message)s')
+                        format='%(asctime)s - %(levelname)s: %(message)s')'''
+
+    # Logging configuration
+    LOGGING_LEVEL = logging.INFO
+    LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    LOGGING_FILENAME_invalid = os.path.join(os.getcwd(), 'Test_Log', 'RegisterTest_Valid.log')
+    # Implement Logging interface
+    logger = logging.getLogger(__name__)
+    logger.setLevel(LOGGING_LEVEL)
+
+    # Create a file handler and set the logging level
+    file_handler = logging.FileHandler(LOGGING_FILENAME_invalid)
+    file_handler.setLevel(LOGGING_LEVEL)
+
+    # Create a formatter and add it to the file handler
+    formatter = logging.Formatter(LOGGING_FORMAT)
+    file_handler.setFormatter(formatter)
+
+    # Add the file handler to the logger
+    logger.addHandler(file_handler)
 
     # step 1: Launch browser
     logging.info("valid Register Test execution start...")
@@ -180,13 +200,33 @@ def valid_RegisterTest():
         logging.info("Test failed. Can't Register")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_ValidTest_failed.png")
 
-    control.close()
+    logger.removeHandler(file_handler)
+    control.quit()
 
 # Invalid Name Test automation
 def Invalid_Name_RegisterTest():
-    # Configure Logging settings
+    '''# Configure Logging settings
     logging.basicConfig(filename="Test_Log/RegisterTest_Invalid_Name.log", level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s: %(message)s')
+                        format='%(asctime)s - %(levelname)s: %(message)s')'''
+
+    # Logging configuration
+    LOGGING_LEVEL = logging.INFO
+    LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    LOGGING_FILENAME_invalid = os.path.join(os.getcwd(), 'Test_Log', 'RegisterTest_invalid_Name.log')
+    # Implement Logging interface
+    logger = logging.getLogger(__name__)
+    logger.setLevel(LOGGING_LEVEL)
+
+    # Create a file handler and set the logging level
+    file_handler = logging.FileHandler(LOGGING_FILENAME_invalid)
+    file_handler.setLevel(LOGGING_LEVEL)
+
+    # Create a formatter and add it to the file handler
+    formatter = logging.Formatter(LOGGING_FORMAT)
+    file_handler.setFormatter(formatter)
+
+    # Add the file handler to the logger
+    logger.addHandler(file_handler)
 
     # step 1: Launch browser
     logging.info("Invalid Name Register Test execution start...")
@@ -361,13 +401,33 @@ def Invalid_Name_RegisterTest():
         logging.info("Test failed. Account Created")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Invalid_Name_Test_failed.png")
 
-    control.close()
+    logger.removeHandler(file_handler)
+    control.quit()
 
 # Invalid phone number test automation
 def Invalid_Phone_RegisterTest():
-    # Configure Logging settings
+    '''# Configure Logging settings
     logging.basicConfig(filename="Test_Log/RegisterTest_Invalid_Phone.log", level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s: %(message)s')
+                        format='%(asctime)s - %(levelname)s: %(message)s')'''
+
+    # Logging configuration
+    LOGGING_LEVEL = logging.INFO
+    LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    LOGGING_FILENAME_invalid = os.path.join(os.getcwd(), 'Test_Log', 'RegisterTest_invalid_Phone.log')
+    # Implement Logging interface
+    logger = logging.getLogger(__name__)
+    logger.setLevel(LOGGING_LEVEL)
+
+    # Create a file handler and set the logging level
+    file_handler = logging.FileHandler(LOGGING_FILENAME_invalid)
+    file_handler.setLevel(LOGGING_LEVEL)
+
+    # Create a formatter and add it to the file handler
+    formatter = logging.Formatter(LOGGING_FORMAT)
+    file_handler.setFormatter(formatter)
+
+    # Add the file handler to the logger
+    logger.addHandler(file_handler)
 
     # step 1: Launch browser
     logging.info("Invalid Phone Register Test execution start...")
@@ -532,13 +592,33 @@ def Invalid_Phone_RegisterTest():
         logging.info("Test failed. Account Created!")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Inalid_phone_Test_failed.png")
 
-    control.close()
+    logger.removeHandler(file_handler)
+    control.quit()
 
 # Invalid password test automation
 def Invalid_Password_RegisterTest():
-    # Configure Logging settings
+    '''# Configure Logging settings
     logging.basicConfig(filename="Test_Log/RegisterTest_Invalid_Password.log", level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s: %(message)s')
+                        format='%(asctime)s - %(levelname)s: %(message)s')'''
+
+    # Logging configuration
+    LOGGING_LEVEL = logging.INFO
+    LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    LOGGING_FILENAME_invalid = os.path.join(os.getcwd(), 'Test_Log', 'RegisterTest_invalid_Password.log')
+    # Implement Logging interface
+    logger = logging.getLogger(__name__)
+    logger.setLevel(LOGGING_LEVEL)
+
+    # Create a file handler and set the logging level
+    file_handler = logging.FileHandler(LOGGING_FILENAME_invalid)
+    file_handler.setLevel(LOGGING_LEVEL)
+
+    # Create a formatter and add it to the file handler
+    formatter = logging.Formatter(LOGGING_FORMAT)
+    file_handler.setFormatter(formatter)
+
+    # Add the file handler to the logger
+    logger.addHandler(file_handler)
 
     # step 1: Launch browser
     logging.info("Invalid password Register Test execution start...")
@@ -709,13 +789,33 @@ def Invalid_Password_RegisterTest():
         logging.info("Test failed. Account Created!")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Invalid_password_Test_failed.png")
 
-    control.close()
+    logger.removeHandler(file_handler)
+    control.quit()
 
 # Invalid email test automation
 def Invalid_Email_RegisterTest():
-    # Configure Logging settings
+    '''# Configure Logging settings
     logging.basicConfig(filename="Test_Log/RegisterTest_Invalid_Email.log", level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s: %(message)s')
+                        format='%(asctime)s - %(levelname)s: %(message)s')'''
+
+    # Logging configuration
+    LOGGING_LEVEL = logging.INFO
+    LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    LOGGING_FILENAME_invalid = os.path.join(os.getcwd(), 'Test_Log', 'RegisterTest_invalid_Email.log')
+    # Implement Logging interface
+    logger = logging.getLogger(__name__)
+    logger.setLevel(LOGGING_LEVEL)
+
+    # Create a file handler and set the logging level
+    file_handler = logging.FileHandler(LOGGING_FILENAME_invalid)
+    file_handler.setLevel(LOGGING_LEVEL)
+
+    # Create a formatter and add it to the file handler
+    formatter = logging.Formatter(LOGGING_FORMAT)
+    file_handler.setFormatter(formatter)
+
+    # Add the file handler to the logger
+    logger.addHandler(file_handler)
 
     # step 1: Launch browser
     logging.info("Invalid Email Register Test execution start...")
@@ -924,13 +1024,33 @@ def Invalid_Email_RegisterTest():
         logging.info("Test failed. Account Created!")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Invalid_Email_Test_failed.png")
 
-    control.close()
+    logger.removeHandler(file_handler)
+    control.quit()
 
 # Invalid test (uncheck agree box)
 def Invalid_checkbox_RegisterTest():
-    # Configure Logging settings
+    '''# Configure Logging settings
     logging.basicConfig(filename="Test_Log/RegisterTest_Invalid_checkbox.log", level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s: %(message)s')
+                        format='%(asctime)s - %(levelname)s: %(message)s')'''
+
+    # Logging configuration
+    LOGGING_LEVEL = logging.INFO
+    LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    LOGGING_FILENAME_invalid = os.path.join(os.getcwd(), 'Test_Log', 'RegisterTest_invalid_checkbox.log')
+    # Implement Logging interface
+    logger = logging.getLogger(__name__)
+    logger.setLevel(LOGGING_LEVEL)
+
+    # Create a file handler and set the logging level
+    file_handler = logging.FileHandler(LOGGING_FILENAME_invalid)
+    file_handler.setLevel(LOGGING_LEVEL)
+
+    # Create a formatter and add it to the file handler
+    formatter = logging.Formatter(LOGGING_FORMAT)
+    file_handler.setFormatter(formatter)
+
+    # Add the file handler to the logger
+    logger.addHandler(file_handler)
 
     # step 1: Launch browser
     logging.info("Invalid checkbox Register Test execution start...")
@@ -1094,7 +1214,8 @@ def Invalid_checkbox_RegisterTest():
         logging.info("Test failed. Account Created!")
         control.get_screenshot_as_file(screenshot_file_path + "\\Register_Invalid_checkbox_Test_failed.png")
 
-    control.close()
+    logger.removeHandler(file_handler)
+    control.quit()
 
 
 # Main Function
